@@ -1,0 +1,1689 @@
+2026-05-11 11:58:17 [INFO] c.i.management.ManagementApplication - Starting ManagementApplication using Java 17.0.12 with PID 6732 (D:\INV\INV-BACKEND\management\target\classes started by WELCOME in D:\INV\INV-BACKEND\management)
+2026-05-11 11:58:17 [DEBUG] c.i.management.ManagementApplication - Running with Spring Boot v4.0.5, Spring v7.0.6
+2026-05-11 11:58:17 [INFO] c.i.management.ManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-11 11:58:17 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-11 11:58:17 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-11 11:58:19 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-11 11:58:20 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 400 ms. Found 9 JPA repository interfaces.
+2026-05-11 11:58:23 [INFO] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-11 11:58:23 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-11 11:58:23 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-11 11:58:23 [INFO] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 6008 ms
+2026-05-11 11:58:24 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-11 11:58:24 [INFO] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-05-11 11:58:26 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-11 11:58:26 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-11 11:58:27 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@16c453e5
+2026-05-11 11:58:27 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-11 11:58:27 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/stockflow]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.43
+	Default catalog/schema: stockflow/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-11 11:58:31 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-11 11:58:31 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-11 11:58:31 [INFO] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-11 11:58:32 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-11 11:58:33 [INFO] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-11 11:58:33 [INFO] c.i.management.ManagementApplication - Started ManagementApplication in 17.633 seconds (process running for 19.585)
+2026-05-11 11:58:34 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-11 11:58:34 [INFO] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-11 11:58:34 [INFO] o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-05-11 11:58:34 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 11:58:35 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 11:58:35 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 11:58:35 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 11:58:35 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 11:58:35 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 11:58:35 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 11:58:35 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 11:58:35 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 11:58:35 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 11:58:35 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 11:58:35 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 11:58:35 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 11:58:39 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 11:58:39 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 11:58:39 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 11:58:39 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 11:58:39 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 11:58:39 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 11:58:39 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 11:58:39 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 11:58:39 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 11:58:39 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 11:58:39 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 11:58:39 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 11:58:39 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 11:58:44 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 11:58:44 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 11:58:44 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 11:58:44 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 11:58:44 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 11:58:44 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 11:58:44 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 11:58:44 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 11:58:44 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 11:58:44 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 11:58:44 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 11:58:44 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 11:58:44 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 11:58:49 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 11:58:49 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 11:58:49 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 11:58:49 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 11:58:49 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 11:58:49 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 11:58:49 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 11:58:49 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 11:58:49 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 11:58:49 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 11:58:49 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 11:58:49 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 11:58:49 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 11:58:54 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 11:58:54 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 11:58:54 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 11:58:54 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 11:58:54 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 11:58:54 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 11:58:54 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 11:58:54 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 11:58:54 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 11:58:54 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 11:58:54 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 11:58:54 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 11:58:54 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 11:58:59 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 11:58:59 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 11:58:59 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 11:58:59 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 11:58:59 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 11:58:59 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 11:58:59 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 11:58:59 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 11:58:59 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 11:58:59 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 11:58:59 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 11:58:59 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 11:58:59 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 11:59:04 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 11:59:04 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 11:59:04 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 11:59:04 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 11:59:04 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 11:59:04 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 11:59:04 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 11:59:04 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 11:59:04 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 11:59:04 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 11:59:04 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 11:59:04 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 11:59:04 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 11:59:09 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 11:59:09 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 11:59:09 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 11:59:09 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 11:59:09 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 11:59:09 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 11:59:09 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 11:59:09 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 11:59:09 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 11:59:09 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 11:59:09 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 11:59:09 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 11:59:09 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 11:59:14 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 11:59:14 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 11:59:14 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 11:59:14 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 11:59:14 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 11:59:14 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 11:59:14 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 11:59:14 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 11:59:14 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 11:59:14 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 11:59:14 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 11:59:14 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 11:59:14 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 11:59:19 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 11:59:19 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 11:59:19 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 11:59:19 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 11:59:19 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 11:59:19 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 11:59:19 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 11:59:19 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 11:59:19 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 11:59:19 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 11:59:19 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 11:59:19 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 11:59:19 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 11:59:24 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 11:59:24 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 11:59:24 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 11:59:24 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 11:59:24 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 11:59:24 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 11:59:24 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 11:59:24 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 11:59:24 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 11:59:24 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 11:59:24 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 11:59:24 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 11:59:24 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 11:59:29 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 11:59:29 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 11:59:29 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 11:59:29 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 11:59:29 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 11:59:29 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 11:59:29 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 11:59:29 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 11:59:29 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 11:59:29 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 11:59:29 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 11:59:29 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 11:59:29 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 11:59:34 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 11:59:34 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 11:59:34 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 11:59:34 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 11:59:34 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 11:59:34 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 11:59:34 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 11:59:34 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 11:59:34 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 11:59:34 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 11:59:34 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 11:59:34 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 11:59:34 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 11:59:39 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 11:59:39 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 11:59:39 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 11:59:39 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 11:59:39 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 11:59:39 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 11:59:39 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 11:59:39 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 11:59:39 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 11:59:39 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 11:59:39 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 11:59:39 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 11:59:39 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 11:59:44 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 11:59:44 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 11:59:44 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 11:59:44 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 11:59:44 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 11:59:44 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 11:59:44 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 11:59:44 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 11:59:44 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 11:59:44 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 11:59:44 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 11:59:44 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 11:59:44 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 11:59:46 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 11:59:46 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 11:59:46 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 11:59:46 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 11:59:46 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 11:59:46 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 11:59:46 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 11:59:46 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 11:59:46 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 11:59:46 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 11:59:47 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 11:59:47 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 11:59:47 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 11:59:47 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 11:59:47 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 11:59:47 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 11:59:47 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 11:59:47 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 11:59:47 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 11:59:47 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 11:59:47 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 11:59:47 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 11:59:47 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 11:59:51 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 11:59:51 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 11:59:51 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 11:59:51 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 11:59:51 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 11:59:51 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 11:59:51 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 11:59:51 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 11:59:51 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 11:59:51 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 11:59:51 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 11:59:51 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 11:59:51 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 11:59:56 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 11:59:56 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 11:59:56 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 11:59:56 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 11:59:56 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 11:59:56 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 11:59:56 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 11:59:56 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 11:59:56 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 11:59:56 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 11:59:56 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 11:59:56 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 11:59:56 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:00:01 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:00:01 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:00:01 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:00:01 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:00:01 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:00:01 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:00:01 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:00:01 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:00:01 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:00:01 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:00:01 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:00:01 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:00:01 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:00:06 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:00:06 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:00:06 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:00:06 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:00:06 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:00:06 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:00:06 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:00:06 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:00:06 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:00:06 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:00:06 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:00:06 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:00:06 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:00:11 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:00:11 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:00:11 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:00:11 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:00:11 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:00:11 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:00:11 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:00:11 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:00:11 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:00:11 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:00:11 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:00:11 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:00:11 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:00:13 [INFO] c.i.m.controller.ProductController - API Fetch All Products
+2026-05-11 12:00:13 [INFO] c.i.m.service.ProductService - Fetching all products
+2026-05-11 12:00:13 [INFO] c.i.m.service.ProductService - Total products fetched : 8
+2026-05-11 12:00:13 [INFO] c.i.m.c.ProcurementController - API Fetch Procurement History
+2026-05-11 12:00:13 [INFO] c.i.m.service.ProcurementService - Fetching procurement history
+2026-05-11 12:00:13 [INFO] c.i.m.service.ProcurementService - Total procurement records : 3
+2026-05-11 12:00:13 [INFO] c.i.management.service.MasterService - Fetching suppliers
+2026-05-11 12:00:13 [INFO] c.i.m.controller.ProductController - API Fetch All Products
+2026-05-11 12:00:13 [INFO] c.i.m.service.ProductService - Fetching all products
+2026-05-11 12:00:13 [INFO] c.i.m.service.ProductService - Total products fetched : 8
+2026-05-11 12:00:13 [INFO] c.i.m.c.ProcurementController - API Fetch Procurement History
+2026-05-11 12:00:13 [INFO] c.i.m.service.ProcurementService - Fetching procurement history
+2026-05-11 12:00:13 [INFO] c.i.m.service.ProcurementService - Total procurement records : 3
+2026-05-11 12:00:14 [INFO] c.i.management.service.MasterService - Total suppliers fetched : 3
+2026-05-11 12:00:14 [INFO] c.i.management.service.MasterService - Fetching suppliers
+2026-05-11 12:00:14 [INFO] c.i.management.service.MasterService - Total suppliers fetched : 3
+2026-05-11 12:00:16 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:00:16 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:00:16 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:00:16 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:00:16 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:00:16 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:00:16 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:00:16 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:00:16 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:00:16 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:00:16 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:00:16 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:00:16 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:00:21 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:00:21 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:00:21 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:00:21 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:00:21 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:00:21 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:00:21 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:00:21 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:00:21 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:00:21 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:00:21 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:00:21 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:00:21 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:00:26 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:00:26 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:00:26 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:00:26 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:00:26 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:00:26 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:00:26 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:00:26 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:00:26 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:00:26 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:00:26 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:00:26 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:00:26 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:00:31 [INFO] c.i.m.controller.ProductController - API Product Stats
+2026-05-11 12:00:31 [INFO] c.i.m.controller.ProductController - API Fetch All Products
+2026-05-11 12:00:31 [INFO] c.i.m.service.ProductService - Fetching all products
+2026-05-11 12:00:31 [INFO] c.i.m.service.ProductService - Generating product statistics
+2026-05-11 12:00:31 [INFO] c.i.management.service.MasterService - Fetching active categories
+2026-05-11 12:00:31 [INFO] c.i.m.service.ProductService - Total products fetched : 8
+2026-05-11 12:00:31 [INFO] c.i.m.service.ProductService - Stats generated successfully
+2026-05-11 12:00:31 [INFO] c.i.m.controller.ProductController - API Fetch All Products
+2026-05-11 12:00:31 [INFO] c.i.m.service.ProductService - Fetching all products
+2026-05-11 12:00:31 [INFO] c.i.m.service.ProductService - Total products fetched : 8
+2026-05-11 12:00:31 [INFO] c.i.m.controller.ProductController - API Product Stats
+2026-05-11 12:00:31 [INFO] c.i.m.service.ProductService - Generating product statistics
+2026-05-11 12:00:31 [INFO] c.i.management.service.MasterService - Total active categories fetched : 6
+2026-05-11 12:00:31 [INFO] c.i.management.service.MasterService - Fetching active categories
+2026-05-11 12:00:31 [INFO] c.i.m.service.ProductService - Stats generated successfully
+2026-05-11 12:00:31 [INFO] c.i.management.service.MasterService - Total active categories fetched : 6
+2026-05-11 12:00:31 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:00:31 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:00:31 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:00:31 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:00:31 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:00:31 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:00:31 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:00:31 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:00:31 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:00:31 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:00:31 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:00:31 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:00:31 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:00:36 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:00:36 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:00:36 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:00:36 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:00:36 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:00:36 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:00:36 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:00:36 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:00:36 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:00:36 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:00:36 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:00:36 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:00:36 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:00:39 [INFO] c.i.m.controller.ProductController - API Fetch All Products
+2026-05-11 12:00:39 [INFO] c.i.m.service.ProductService - Fetching all products
+2026-05-11 12:00:39 [INFO] c.i.management.service.MasterService - Fetching suppliers
+2026-05-11 12:00:39 [INFO] c.i.management.service.MasterService - Total suppliers fetched : 3
+2026-05-11 12:00:39 [INFO] c.i.m.service.ProductService - Total products fetched : 8
+2026-05-11 12:00:39 [INFO] c.i.m.c.ProcurementController - API Fetch Procurement History
+2026-05-11 12:00:39 [INFO] c.i.m.service.ProcurementService - Fetching procurement history
+2026-05-11 12:00:39 [INFO] c.i.management.service.MasterService - Fetching suppliers
+2026-05-11 12:00:39 [INFO] c.i.management.service.MasterService - Total suppliers fetched : 3
+2026-05-11 12:00:39 [INFO] c.i.m.service.ProcurementService - Total procurement records : 3
+2026-05-11 12:00:39 [INFO] c.i.m.controller.ProductController - API Fetch All Products
+2026-05-11 12:00:39 [INFO] c.i.m.service.ProductService - Fetching all products
+2026-05-11 12:00:39 [INFO] c.i.m.c.ProcurementController - API Fetch Procurement History
+2026-05-11 12:00:39 [INFO] c.i.m.service.ProcurementService - Fetching procurement history
+2026-05-11 12:00:39 [INFO] c.i.m.service.ProductService - Total products fetched : 8
+2026-05-11 12:00:39 [INFO] c.i.m.service.ProcurementService - Total procurement records : 3
+2026-05-11 12:00:41 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:00:41 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:00:41 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:00:41 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:00:41 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:00:41 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:00:41 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:00:41 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:00:41 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:00:41 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:00:41 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:00:41 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:00:41 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:00:46 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:00:46 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:00:46 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:00:46 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:00:46 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:00:46 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:00:46 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:00:46 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:00:46 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:00:46 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:00:46 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:00:46 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:00:46 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:00:51 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:00:51 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:00:51 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:00:51 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:00:51 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:00:51 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:00:51 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:00:51 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:00:51 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:00:51 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:00:51 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:00:51 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:00:51 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:00:56 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:00:56 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:00:56 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:00:56 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:00:56 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:00:56 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:00:56 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:00:56 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:00:56 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:00:56 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:00:56 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:00:56 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:00:56 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:01:01 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:01:01 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:01:01 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:01:01 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:01:01 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:01:01 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:01:01 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:01:01 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:01:01 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:01:01 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:01:01 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:01:01 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:01:01 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:01:06 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:01:06 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:01:06 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:01:06 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:01:06 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:01:06 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:01:06 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:01:06 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:01:06 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:01:06 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:01:06 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:01:06 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:01:06 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:01:11 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:01:11 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:01:11 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:01:11 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:01:11 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:01:11 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:01:11 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:01:11 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:01:11 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:01:11 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:01:11 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:01:11 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:01:11 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:01:16 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:01:16 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:01:16 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:01:16 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:01:16 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:01:16 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:01:16 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:01:16 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:01:16 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:01:16 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:01:16 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:01:16 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:01:16 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:01:21 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:01:21 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:01:21 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:01:21 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:01:21 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:01:21 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:01:21 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:01:21 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:01:21 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:01:21 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:01:21 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:01:21 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:01:21 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:01:26 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:01:26 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:01:26 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:01:26 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:01:26 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:01:26 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:01:26 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:01:26 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:01:26 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:01:26 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:01:26 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:01:26 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:01:26 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:01:31 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:01:31 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:01:31 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:01:31 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:01:31 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:01:31 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:01:31 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:01:31 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:01:31 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:01:31 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:01:31 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:01:31 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:01:31 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:01:36 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:01:36 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:01:36 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:01:36 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:01:36 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:01:36 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:01:36 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:01:36 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:01:36 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:01:36 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:01:36 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:01:36 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:01:36 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:01:41 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:01:41 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:01:41 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:01:41 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:01:41 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:01:41 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:01:41 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:01:41 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:01:41 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:01:41 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:01:41 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:01:41 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:01:41 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:01:46 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:01:46 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:01:46 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:01:46 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:01:46 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:01:46 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:01:46 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:01:46 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:01:46 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:01:46 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:01:46 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:01:46 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:01:46 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:01:51 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:01:51 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:01:51 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:01:51 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:01:51 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:01:51 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:01:51 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:01:51 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:01:51 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:01:51 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:01:51 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:01:51 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:01:51 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:01:57 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:01:57 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:01:57 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:01:57 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:01:57 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:01:57 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:01:57 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:01:57 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:01:57 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:01:57 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:01:57 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:01:57 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:01:57 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:02:01 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:02:01 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:02:01 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:02:01 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:02:01 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:02:01 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:02:01 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:02:01 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:02:01 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:02:01 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:02:01 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:02:01 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:02:01 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:02:07 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:02:07 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:02:07 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:02:07 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:02:07 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:02:07 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:02:07 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:02:07 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:02:07 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:02:07 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:02:07 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:02:07 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:02:07 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:02:11 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:02:11 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:02:11 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:02:11 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:02:11 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:02:11 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:02:11 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:02:11 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:02:11 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:02:11 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:02:11 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:02:11 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:02:11 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:02:17 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:02:17 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:02:17 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:02:17 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:02:17 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:02:17 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:02:17 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:02:17 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:02:17 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:02:17 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:02:17 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:02:17 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:02:17 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:02:21 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:02:21 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:02:21 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:02:21 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:02:21 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:02:21 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:02:21 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:02:21 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:02:21 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:02:21 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:02:21 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:02:21 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:02:21 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:02:28 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:02:28 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:02:28 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:02:28 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:02:28 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:02:28 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:02:28 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:02:28 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:02:28 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:02:28 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:02:28 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:02:28 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:02:28 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:02:31 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:02:31 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:02:31 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:02:31 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:02:31 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:02:31 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:02:31 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:02:31 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:02:31 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:02:31 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:02:31 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:02:31 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:02:31 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:02:37 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:02:37 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:02:37 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:02:37 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:02:37 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:02:37 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:02:37 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:02:37 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:02:37 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:02:37 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:02:37 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:02:37 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:02:37 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:02:41 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:02:41 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:02:41 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:02:41 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:02:41 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:02:41 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:02:41 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:02:41 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:02:41 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:02:41 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:02:41 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:02:41 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:02:41 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:02:47 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:02:47 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:02:47 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:02:47 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:02:47 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:02:47 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:02:47 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:02:47 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:02:47 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:02:47 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:02:47 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:02:47 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:02:47 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:03:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:03:02 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:03:02 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:03:02 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:03:02 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:03:02 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:03:02 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:03:02 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:03:02 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:03:02 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:03:02 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:03:02 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:03:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:04:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:04:02 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:04:02 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:04:02 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:04:02 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:04:02 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:04:02 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:04:02 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:04:02 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:04:02 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:04:07 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:04:07 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:04:07 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:05:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:05:02 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:05:02 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:05:02 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:05:02 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:05:02 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:05:02 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:05:02 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:05:02 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:05:02 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:05:02 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:05:02 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:05:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:06:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:06:02 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:06:02 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:06:02 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:06:02 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:06:02 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:06:02 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:06:02 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:06:02 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:06:02 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:06:02 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:06:02 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:06:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:07:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:07:02 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:07:02 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:07:02 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:07:02 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:07:02 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:07:02 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:07:02 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:07:02 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:07:02 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:07:02 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:07:02 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:07:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:08:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:08:02 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:08:02 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:08:02 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:08:02 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:08:02 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:08:02 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:08:02 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:08:02 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:08:02 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:08:02 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:08:02 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:08:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:09:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:09:02 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:09:02 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:09:02 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:09:02 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:09:02 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:09:02 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:09:02 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:09:02 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:09:02 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:09:02 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:09:02 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:09:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:10:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:10:02 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:10:02 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:10:02 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:10:02 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:10:02 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:10:02 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:10:02 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:10:02 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:10:02 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:10:02 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:10:02 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:10:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:14:23 [INFO] c.i.management.ManagementApplication - Starting ManagementApplication using Java 17.0.12 with PID 1536 (D:\INV\INV-BACKEND\management\target\classes started by WELCOME in D:\INV\INV-BACKEND\management)
+2026-05-11 12:14:23 [DEBUG] c.i.management.ManagementApplication - Running with Spring Boot v4.0.5, Spring v7.0.6
+2026-05-11 12:14:23 [INFO] c.i.management.ManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-11 12:14:23 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-11 12:14:23 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-11 12:14:25 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-11 12:14:25 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 163 ms. Found 9 JPA repository interfaces.
+2026-05-11 12:14:27 [INFO] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-11 12:14:27 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-11 12:14:27 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-11 12:14:27 [INFO] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 4156 ms
+2026-05-11 12:14:28 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-11 12:14:28 [INFO] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-05-11 12:14:30 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-11 12:14:30 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-11 12:14:31 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@136d871b
+2026-05-11 12:14:31 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-11 12:14:31 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/stockflow]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.43
+	Default catalog/schema: stockflow/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-11 12:14:34 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-11 12:14:34 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-11 12:14:34 [INFO] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-11 12:14:35 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-11 12:14:35 [INFO] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-11 12:14:35 [INFO] c.i.management.ManagementApplication - Started ManagementApplication in 14.448 seconds (process running for 16.185)
+2026-05-11 12:14:36 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-11 12:14:36 [INFO] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-11 12:14:36 [INFO] o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-05-11 12:14:36 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:14:36 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:14:36 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:14:36 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:14:36 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:14:36 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:14:36 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:14:36 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:14:36 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:14:36 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:14:36 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:14:36 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:14:36 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:14:40 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:14:40 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:14:40 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:14:40 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:14:40 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:14:40 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:14:40 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:14:40 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:14:40 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:14:40 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:14:40 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:14:40 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:14:40 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:14:45 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:14:45 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:14:45 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:14:45 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:14:45 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:14:45 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:14:45 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:14:45 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:14:45 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:14:45 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:14:45 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:14:45 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:14:45 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:14:50 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:14:50 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:14:50 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:14:50 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:14:50 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:14:50 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:14:50 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:14:50 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:14:50 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:14:50 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:14:50 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:14:50 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:14:50 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:14:55 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:14:55 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:14:55 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:14:55 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:14:55 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:14:55 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:14:55 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:14:55 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:14:55 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:14:55 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:14:55 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:14:55 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:14:55 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:15:00 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:15:00 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:15:00 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:15:00 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:15:00 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:15:00 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:15:00 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:15:00 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:15:00 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:15:00 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:15:00 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:15:00 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:15:00 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:15:05 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:15:05 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:15:05 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:15:05 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:15:05 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:15:05 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:15:05 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:15:05 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:15:05 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:15:05 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:15:05 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:15:05 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:15:05 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:15:10 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:15:10 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:15:10 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:15:10 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:15:10 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:15:10 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:15:10 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:15:10 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:15:10 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:15:10 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:15:10 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:15:10 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:15:10 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:15:15 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:15:15 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:15:15 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:15:15 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:15:15 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:15:15 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:15:15 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:15:15 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:15:15 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:15:15 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:15:15 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:15:15 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:15:15 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:15:20 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:15:20 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:15:20 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:15:20 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:15:20 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:15:20 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:15:20 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:15:20 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:15:20 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:15:20 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:15:20 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:15:20 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:15:20 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:15:25 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:15:25 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:15:25 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:15:25 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:15:25 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:15:25 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:15:25 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:15:25 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:15:25 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:15:25 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:15:25 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:15:25 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:15:25 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:15:30 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:15:30 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:15:30 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:15:30 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:15:30 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:15:30 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:15:30 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:15:30 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:15:30 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:15:30 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:15:30 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:15:30 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:15:30 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:15:35 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:15:35 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:15:35 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:15:35 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:15:35 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:15:35 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:15:35 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:15:35 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:15:35 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:15:35 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:15:35 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:15:35 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:15:35 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:15:38 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:15:38 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:15:38 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:15:38 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:15:38 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:15:38 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:15:38 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:15:38 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:15:38 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:15:38 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:15:39 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:15:39 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:15:39 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:15:39 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:15:39 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:15:39 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:15:39 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:15:39 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:15:39 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:15:39 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:15:39 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:15:39 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:15:39 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:15:39 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:15:39 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:15:42 [INFO] c.i.management.service.MasterService - Fetching suppliers
+2026-05-11 12:15:42 [INFO] c.i.m.controller.ProductController - API Fetch All Products
+2026-05-11 12:15:42 [INFO] c.i.m.service.ProductService - Fetching all products
+2026-05-11 12:15:42 [INFO] c.i.m.c.ProcurementController - API Fetch Procurement History
+2026-05-11 12:15:42 [INFO] c.i.m.service.ProcurementService - Fetching procurement history
+2026-05-11 12:15:42 [INFO] c.i.m.service.ProductService - Total products fetched : 8
+2026-05-11 12:15:42 [INFO] c.i.m.service.ProcurementService - Total procurement records : 3
+2026-05-11 12:15:43 [INFO] c.i.m.controller.ProductController - API Fetch All Products
+2026-05-11 12:15:43 [INFO] c.i.m.service.ProductService - Fetching all products
+2026-05-11 12:15:43 [INFO] c.i.m.c.ProcurementController - API Fetch Procurement History
+2026-05-11 12:15:43 [INFO] c.i.m.service.ProcurementService - Fetching procurement history
+2026-05-11 12:15:43 [INFO] c.i.m.service.ProductService - Total products fetched : 8
+2026-05-11 12:15:43 [INFO] c.i.m.service.ProcurementService - Total procurement records : 3
+2026-05-11 12:15:43 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:15:43 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:15:43 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:15:43 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:15:43 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:15:43 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:15:43 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:15:43 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:15:43 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:15:43 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:15:43 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:15:43 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:15:43 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:15:45 [INFO] c.i.management.service.MasterService - Total suppliers fetched : 3
+2026-05-11 12:15:45 [INFO] c.i.management.service.MasterService - Fetching suppliers
+2026-05-11 12:15:45 [INFO] c.i.management.service.MasterService - Total suppliers fetched : 3
+2026-05-11 12:15:48 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:15:48 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:15:48 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:15:48 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:15:48 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:15:48 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:15:48 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:15:48 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:15:48 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:15:48 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:15:48 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:15:48 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:15:48 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:15:53 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:15:53 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:15:53 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:15:53 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:15:53 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:15:53 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:15:53 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:15:53 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:15:53 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:15:53 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:15:53 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:15:53 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:15:53 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:15:58 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:15:58 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:15:58 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:15:58 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:15:58 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:15:58 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:15:58 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:15:58 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:15:58 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:15:58 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:15:58 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:15:58 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:15:58 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:16:03 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:16:03 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:16:03 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:16:03 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:16:03 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:16:03 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:16:03 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:16:03 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:16:03 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:16:03 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:16:03 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:16:03 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:16:03 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:16:08 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:16:08 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:16:08 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:16:08 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:16:08 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:16:08 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:16:08 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:16:08 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:16:08 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:16:08 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:16:08 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:16:08 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:16:08 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:16:13 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:16:13 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:16:13 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:16:13 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:16:13 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:16:13 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:16:13 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:16:13 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:16:13 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:16:13 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:16:13 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:16:13 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:16:13 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:16:18 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:16:18 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:16:18 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:16:18 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:16:18 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:16:18 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:16:18 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:16:18 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:16:18 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:16:18 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:16:18 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:16:18 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:16:18 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:16:23 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:16:23 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:16:23 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:16:23 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:16:23 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:16:23 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:16:23 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:16:23 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:16:23 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:16:23 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:16:23 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:16:23 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:16:23 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:16:28 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:16:28 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:16:28 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:16:28 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:16:28 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:16:28 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:16:28 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:16:28 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:16:28 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:16:28 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:16:28 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:16:28 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:16:28 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:16:33 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:16:33 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:16:33 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:16:33 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:16:33 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:16:33 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:16:33 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:16:33 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:16:33 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:16:33 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:16:33 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:16:33 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:16:33 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:16:38 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:16:38 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:16:38 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:16:38 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:16:38 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:16:38 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:16:38 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:16:38 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:16:38 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:16:38 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:16:38 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:16:38 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:16:38 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:16:43 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:16:43 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:16:43 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:16:43 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:16:43 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:16:43 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:16:43 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:16:43 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:16:43 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:16:43 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:16:43 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:16:43 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:16:43 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:16:48 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:16:48 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:16:48 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:16:48 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:16:48 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:16:48 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:16:48 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:16:48 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:16:48 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:16:48 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:16:48 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:16:48 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:16:48 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:16:53 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:16:53 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:16:53 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:16:53 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:16:53 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:16:53 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:16:53 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:16:53 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:16:53 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:16:53 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:16:53 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:16:53 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:16:53 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:16:58 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:16:58 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:16:58 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:16:58 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:16:58 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:16:58 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:16:58 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:16:58 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:16:58 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:16:58 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:16:58 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:16:58 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:16:58 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:17:03 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:17:03 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:17:03 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:17:03 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:17:03 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:17:03 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:17:03 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:17:03 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:17:03 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:17:03 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:17:03 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:17:03 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:17:03 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:17:08 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:17:08 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:17:08 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:17:08 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:17:08 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:17:08 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:17:08 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:17:08 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:17:08 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:17:08 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:17:08 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:17:08 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:17:08 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:17:13 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:17:13 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:17:13 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:17:13 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:17:13 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:17:13 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:17:13 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:17:13 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:17:13 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:17:13 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:17:13 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:17:13 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:17:13 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:17:18 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:17:18 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:17:18 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:17:18 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:17:18 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:17:18 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:17:18 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:17:18 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:17:18 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:17:18 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:17:18 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:17:18 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:17:18 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:17:23 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:17:23 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:17:23 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:17:23 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:17:23 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:17:23 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:17:23 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:17:23 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:17:23 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:17:23 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:17:23 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:17:23 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:17:23 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:17:28 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:17:28 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:17:28 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:17:28 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:17:28 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:17:28 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:17:28 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:17:28 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:17:28 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:17:28 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:17:28 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:17:28 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:17:28 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:17:33 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:17:33 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:17:33 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:17:33 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:17:33 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:17:33 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:17:33 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:17:33 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:17:33 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:17:33 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:17:33 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:17:33 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:17:33 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:17:38 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:17:38 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:17:38 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:17:38 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:17:38 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:17:38 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:17:38 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:17:38 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:17:38 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:17:38 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:17:38 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:17:38 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:17:38 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:17:43 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:17:43 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:17:43 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:17:43 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:17:43 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:17:43 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:17:43 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:17:43 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:17:43 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:17:43 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:17:43 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:17:43 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:17:43 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:17:48 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:17:48 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:17:48 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:17:48 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:17:48 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:17:48 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:17:48 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:17:48 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:17:48 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:17:48 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:17:48 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:17:48 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:17:48 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:17:53 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:17:53 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:17:53 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:17:53 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:17:53 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:17:53 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:17:53 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:17:53 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:17:53 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:17:53 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:17:53 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:17:53 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:17:53 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:17:58 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:17:58 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:17:58 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:17:58 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:17:58 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:17:58 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:17:58 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:17:58 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:17:58 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:17:58 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:17:58 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:17:58 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:17:58 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:18:03 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:18:03 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:18:03 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:18:03 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:18:03 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:18:03 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:18:03 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:18:03 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:18:03 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:18:03 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:18:03 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:18:03 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:18:03 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:18:08 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:18:08 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:18:08 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:18:08 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:18:08 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:18:08 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:18:08 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:18:08 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:18:08 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:18:08 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:18:08 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:18:08 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:18:08 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:18:13 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:18:13 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:18:13 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:18:13 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:18:13 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:18:13 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:18:13 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:18:13 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:18:13 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:18:13 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:18:13 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:18:13 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:18:13 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:18:18 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:18:18 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:18:18 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:18:18 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:18:18 [INFO] c.i.management.service.ReportService - Calculated inventory value : 27761.0
+2026-05-11 12:18:18 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:18:18 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 0
+2026-05-11 12:18:18 [ERROR] c.i.management.service.ReportService - Critical stock level for : Tea Powder 500g
+2026-05-11 12:18:18 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:18:18 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:18:18 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:18:18 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 3
+2026-05-11 12:18:18 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:18:22 [INFO] c.i.m.service.ProcurementService - Manual procurement started
+2026-05-11 12:18:22 [INFO] c.i.m.service.InventoryService - Stock increase started for : Tea Powder 500g
+2026-05-11 12:18:22 [INFO] c.i.m.service.InventoryService - Stock increased for Tea Powder 500g | Previous : 0 | Added : 10 | Current : 10
+2026-05-11 12:18:22 [INFO] c.i.m.service.InventoryService - Saving inventory transaction for : Tea Powder 500g
+2026-05-11 12:18:22 [INFO] c.i.m.service.InventoryService - Inventory transaction saved | Product : Tea Powder 500g | Type : PURCHASE | Qty : 10
+2026-05-11 12:18:22 [WARN] c.i.m.service.InventoryService - Low stock warning for Tea Powder 500g | Remaining : 10
+2026-05-11 12:18:22 [INFO] c.i.m.service.InventoryService - Stock increase completed for : Tea Powder 500g
+2026-05-11 12:18:22 [INFO] c.i.m.service.ProcurementService - Procurement saved successfully | Product : Tea Powder 500g | Qty : 10
+2026-05-11 12:18:23 [INFO] c.i.m.c.ProcurementController - API Fetch Procurement History
+2026-05-11 12:18:23 [INFO] c.i.m.service.ProcurementService - Fetching procurement history
+2026-05-11 12:18:23 [INFO] c.i.m.service.ProcurementService - Total procurement records : 4
+2026-05-11 12:18:23 [INFO] c.i.m.controller.ProductController - API Fetch All Products
+2026-05-11 12:18:23 [INFO] c.i.m.service.ProductService - Fetching all products
+2026-05-11 12:18:23 [INFO] c.i.m.service.ProductService - Total products fetched : 8
+2026-05-11 12:18:25 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:18:25 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:18:25 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:18:25 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:18:25 [INFO] c.i.management.service.ReportService - Calculated inventory value : 28361.0
+2026-05-11 12:18:25 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:18:25 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 10
+2026-05-11 12:18:25 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:18:25 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:18:25 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:18:25 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 4
+2026-05-11 12:18:25 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:18:28 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:18:28 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:18:28 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:18:28 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:18:28 [INFO] c.i.management.service.ReportService - Calculated inventory value : 28361.0
+2026-05-11 12:18:28 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:18:28 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 10
+2026-05-11 12:18:28 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:18:28 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:18:28 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:18:28 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 4
+2026-05-11 12:18:28 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:18:33 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:18:33 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:18:33 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:18:33 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:18:33 [INFO] c.i.management.service.ReportService - Calculated inventory value : 28361.0
+2026-05-11 12:18:33 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:18:33 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 10
+2026-05-11 12:18:33 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:18:33 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:18:33 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:18:33 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 4
+2026-05-11 12:18:33 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:18:38 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 12:18:38 [INFO] c.i.management.service.ReportService - Fetched products : 8
+2026-05-11 12:18:38 [INFO] c.i.management.service.ReportService - Fetched sale items : 6
+2026-05-11 12:18:38 [INFO] c.i.management.service.ReportService - Calculated total revenue : 1006.0
+2026-05-11 12:18:38 [INFO] c.i.management.service.ReportService - Calculated inventory value : 28361.0
+2026-05-11 12:18:38 [WARN] c.i.management.service.ReportService - Low stock detected : Lightning Cable | Remaining : 10
+2026-05-11 12:18:38 [WARN] c.i.management.service.ReportService - Low stock detected : Tea Powder 500g | Remaining : 10
+2026-05-11 12:18:38 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 12:18:38 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 12:18:38 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 6
+2026-05-11 12:18:38 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 4
+2026-05-11 12:18:38 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 12:24:51 [INFO] c.i.m.ManagementApplicationTests - Starting ManagementApplicationTests using Java 17.0.12 with PID 9104 (started by WELCOME in D:\INV\INV-BACKEND\management)
+2026-05-11 12:24:51 [DEBUG] c.i.m.ManagementApplicationTests - Running with Spring Boot v4.0.5, Spring v7.0.6
+2026-05-11 12:24:51 [INFO] c.i.m.ManagementApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-11 12:24:52 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-11 12:24:52 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 133 ms. Found 9 JPA repository interfaces.
+2026-05-11 12:24:53 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-11 12:24:53 [INFO] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-05-11 12:24:54 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-11 12:24:54 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-11 12:24:55 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b5c9412
+2026-05-11 12:24:55 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-11 12:24:55 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/stockflow]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.43
+	Default catalog/schema: stockflow/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-11 12:24:57 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-11 12:24:57 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-11 12:24:57 [INFO] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-11 12:24:58 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-11 12:24:59 [INFO] c.i.m.ManagementApplicationTests - Started ManagementApplicationTests in 8.802 seconds (process running for 11.008)
+2026-05-11 12:25:00 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-11 12:25:00 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-11 12:25:00 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
