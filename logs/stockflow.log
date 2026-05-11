@@ -1687,3 +1687,1153 @@
 2026-05-11 12:25:00 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-05-11 12:25:00 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-05-11 12:25:00 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-11 15:03:24 [INFO] c.i.management.ManagementApplication - Starting ManagementApplication using Java 17.0.12 with PID 7996 (D:\INV\INV-BACKEND\management\target\classes started by WELCOME in D:\INV\INV-BACKEND\management)
+2026-05-11 15:03:24 [DEBUG] c.i.management.ManagementApplication - Running with Spring Boot v4.0.5, Spring v7.0.6
+2026-05-11 15:03:24 [INFO] c.i.management.ManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-11 15:03:24 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-11 15:03:24 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-11 15:03:26 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-11 15:03:26 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 146 ms. Found 9 JPA repository interfaces.
+2026-05-11 15:03:27 [INFO] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-11 15:03:27 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-11 15:03:27 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-11 15:03:27 [INFO] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2968 ms
+2026-05-11 15:03:27 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-11 15:03:28 [INFO] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-05-11 15:03:29 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-11 15:03:29 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-11 15:03:32 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@354ab414
+2026-05-11 15:03:32 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-11 15:03:33 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://viaduct.proxy.rlwy.net:31858/railway]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: railway/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-11 15:03:35 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-11 15:03:45 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-11 15:03:45 [INFO] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-11 15:03:46 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-11 15:03:47 [INFO] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-11 15:03:47 [INFO] c.i.management.ManagementApplication - Started ManagementApplication in 24.077 seconds (process running for 25.293)
+2026-05-11 15:04:02 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-11 15:04:02 [INFO] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-11 15:04:02 [INFO] o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-05-11 15:04:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:04:06 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:04:06 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:04:06 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:04:06 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:04:06 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:04:06 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:04:07 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:04:08 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:04:08 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:05:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:05:05 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:05:05 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:05:05 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:05:05 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:05:05 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:05:05 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:05:07 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:05:08 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:05:08 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:06:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:06:05 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:06:05 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:06:05 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:06:05 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:06:05 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:06:05 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:06:07 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:06:08 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:06:08 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:07:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:07:06 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:07:06 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:07:06 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:07:06 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:07:06 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:07:06 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:07:07 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:07:08 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:07:08 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:08:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:08:05 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:08:05 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:08:05 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:08:05 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:08:05 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:08:05 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:08:06 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:08:08 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:08:08 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:09:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:09:05 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:09:05 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:09:05 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:09:05 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:09:05 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:09:05 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:09:06 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:09:08 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:09:08 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:10:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:10:05 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:10:05 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:10:05 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:10:05 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:10:05 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:10:05 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:10:06 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:10:08 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:10:08 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:11:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:11:05 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:11:05 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:11:05 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:11:05 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:11:05 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:11:05 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:11:06 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:11:08 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:11:08 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:12:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:12:05 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:12:05 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:12:05 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:12:05 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:12:05 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:12:05 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:12:06 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:12:08 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:12:08 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:13:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:13:05 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:13:05 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:13:05 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:13:05 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:13:05 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:13:05 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:13:07 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:13:08 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:13:08 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:14:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:14:05 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:14:05 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:14:05 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:14:05 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:14:05 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:14:05 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:14:06 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:14:08 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:14:08 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:15:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:15:05 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:15:05 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:15:05 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:15:05 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:15:05 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:15:05 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:15:06 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:15:08 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:15:08 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:16:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:16:05 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:16:05 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:16:05 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:16:05 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:16:05 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:16:05 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:16:07 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:16:08 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:16:08 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:17:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:17:10 [WARN] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6f176e9e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-05-11 15:17:12 [WARN] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@354ab414 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-05-11 15:17:22 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:17:22 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:17:22 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:17:22 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:17:22 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:17:22 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:17:33 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:17:35 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:17:35 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:17:57 [WARN] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@44300b52 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-05-11 15:18:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:18:25 [WARN] c.zaxxer.hikari.pool.ProxyConnection - HikariPool-1 - Connection com.mysql.cj.jdbc.ConnectionImpl@336a4141 marked as broken because of SQLSTATE(08S01), ErrorCode(0)
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 19,703 milliseconds ago. The last packet sent successfully to the server was 19,703 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55)
+	at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2139)
+	at com.zaxxer.hikari.pool.ProxyConnection.setAutoCommit(ProxyConnection.java:412)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.setAutoCommit(HikariProxyConnection.java)
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.resetConnection(AbstractLogicalConnectionImplementor.java:108)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.afterCompletion(LogicalConnectionManagedImpl.java:292)
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.commit(AbstractLogicalConnectionImplementor.java:97)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commitNoRollbackOnly(JdbcResourceLocalTransactionCoordinatorImpl.java:249)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:242)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:89)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:553)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:794)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:757)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:687)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:408)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:135)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:166)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:222)
+	at jdk.proxy4/jdk.proxy4.$Proxy140.findAll(Unknown Source)
+	at com.inventory.management.service.ReportService.dashboard(ReportService.java:45)
+	at com.inventory.management.controller.ReportController.dashboard(ReportController.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 19,703 milliseconds ago. The last packet sent successfully to the server was 19,703 milliseconds ago.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:590)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:767)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:706)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:938)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:817)
+	at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2114)
+	... 68 common frames omitted
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:132)
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:55)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:72)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:54)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:36)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:43)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:32)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:45)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:35)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:584)
+	... 73 common frames omitted
+2026-05-11 15:18:25 [ERROR] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction] with root cause
+java.sql.SQLException: Connection is closed
+	at com.zaxxer.hikari.pool.ProxyConnection$ClosedConnection.lambda$getClosedConnection$0(ProxyConnection.java:559)
+	at jdk.proxy3/jdk.proxy3.$Proxy104.setAutoCommit(Unknown Source)
+	at com.zaxxer.hikari.pool.ProxyConnection.setAutoCommit(ProxyConnection.java:412)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.setAutoCommit(HikariProxyConnection.java)
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.begin(AbstractLogicalConnectionImplementor.java:68)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.begin(LogicalConnectionManagedImpl.java:287)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.begin(JdbcResourceLocalTransactionCoordinatorImpl.java:226)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.begin(TransactionImpl.java:75)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.beginTransaction(HibernateJpaDialect.java:147)
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:411)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:532)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:405)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:628)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:365)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:135)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:166)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:222)
+	at jdk.proxy4/jdk.proxy4.$Proxy139.findAll(Unknown Source)
+	at com.inventory.management.service.ReportService.dashboard(ReportService.java:47)
+	at com.inventory.management.controller.ReportController.dashboard(ReportController.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-05-11 15:19:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:19:12 [WARN] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@59b645b3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-05-11 15:19:13 [WARN] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7fface5c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-05-11 15:19:22 [WARN] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@52caf673 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-05-11 15:19:23 [WARN] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7e55d129 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-05-11 15:19:32 [WARN] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@46f90c00 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-05-11 15:19:32 [WARN] org.hibernate.orm.jdbc.error - HHH000247: ErrorCode: 0, SQLState: 08003
+2026-05-11 15:19:32 [WARN] org.hibernate.orm.jdbc.error - HikariPool-1 - Connection is not available, request timed out after 30051ms (total=3, active=0, idle=2, waiting=0)
+2026-05-11 15:19:32 [WARN] org.hibernate.orm.jdbc.error - HHH000247: ErrorCode: 0, SQLState: 08003
+2026-05-11 15:19:32 [WARN] org.hibernate.orm.jdbc.error - HikariPool-1 - Connection is not available, request timed out after 30051ms (total=3, active=0, idle=2, waiting=0)
+2026-05-11 15:19:32 [ERROR] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction] with root cause
+com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:929)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:558)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2680)
+	at com.zaxxer.hikari.pool.PoolBase.setNetworkTimeout(PoolBase.java:585)
+	at com.zaxxer.hikari.pool.PoolBase.isConnectionDead(PoolBase.java:177)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:166)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:142)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:127)
+	at org.hibernate.engine.jdbc.connections.internal.DataSourceConnectionProvider.getConnection(DataSourceConnectionProvider.java:137)
+	at org.hibernate.internal.NonContextualJdbcConnectionAccess.obtainConnection(NonContextualJdbcConnectionAccess.java:47)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.acquire(LogicalConnectionManagedImpl.java:187)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.acquireConnectionIfNeeded(LogicalConnectionManagedImpl.java:87)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getPhysicalConnection(LogicalConnectionManagedImpl.java:126)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.beginTransaction(HibernateJpaDialect.java:135)
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:411)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:532)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:405)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:628)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:365)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:135)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:166)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:222)
+	at jdk.proxy4/jdk.proxy4.$Proxy140.findAll(Unknown Source)
+	at com.inventory.management.service.ReportService.dashboard(ReportService.java:45)
+	at com.inventory.management.controller.ReportController.dashboard(ReportController.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-05-11 15:19:33 [WARN] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3afb3f2a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-05-11 15:19:43 [WARN] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@152517ff (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-05-11 15:19:43 [WARN] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m2s65ms41µs100ns).
+2026-05-11 15:20:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:20:05 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:20:05 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:20:05 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:20:05 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:20:05 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:20:05 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:20:07 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:20:09 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:20:09 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:21:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:21:05 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:21:05 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:21:05 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:21:05 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:21:05 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:21:05 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:21:07 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:21:08 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:21:08 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:22:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:22:05 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:22:05 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:22:05 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:22:05 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:22:05 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:22:05 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:22:06 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:22:08 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:22:08 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:23:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:23:09 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:23:09 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:23:09 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:23:09 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:23:09 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:23:09 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:23:11 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:23:12 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:23:12 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:24:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:24:05 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:24:05 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:24:05 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:24:05 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:24:05 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:24:05 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:24:07 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:24:08 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:24:08 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:25:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:25:05 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:25:05 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:25:05 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:25:05 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:25:05 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:25:05 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:25:07 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:25:08 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:25:08 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:26:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:26:05 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:26:05 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:26:05 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:26:05 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:26:05 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:26:05 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:26:07 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:26:08 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:26:08 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:34:53 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:34:55 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:34:56 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:34:56 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:34:56 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:34:56 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:34:56 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:34:56 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:34:57 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:34:58 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:34:58 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:34:58 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:34:58 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:34:58 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:34:58 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:34:59 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:34:59 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:35:00 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:35:01 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:35:01 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:35:01 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:35:04 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:35:04 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:35:04 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:35:04 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:35:04 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:35:04 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:35:05 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:35:07 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:35:07 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:35:07 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:35:10 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:35:10 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:35:10 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:35:10 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:35:10 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:35:10 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:35:11 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:35:12 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:35:12 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:35:12 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:35:15 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:35:15 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:35:15 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:35:15 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:35:15 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:35:15 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:35:16 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:35:18 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:35:18 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:35:18 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:35:20 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:35:20 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:35:20 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:35:20 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:35:20 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:35:20 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:35:22 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:35:23 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:35:23 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:35:23 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:35:26 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:35:26 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:35:26 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:35:26 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:35:26 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:35:26 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:35:27 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:35:28 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:35:28 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:35:28 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:35:31 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:35:31 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:35:31 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:35:31 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:35:31 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:35:31 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:35:32 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:35:34 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:35:34 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:35:34 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:35:37 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:35:37 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:35:37 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:35:37 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:35:37 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:35:37 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:35:38 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:35:38 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:35:39 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:35:39 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:35:41 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:35:41 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:35:41 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:35:41 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:35:41 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:35:41 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:35:41 [INFO] c.i.m.c.ProcurementController - API Fetch Procurement History
+2026-05-11 15:35:41 [INFO] c.i.m.service.ProcurementService - Fetching procurement history
+2026-05-11 15:35:41 [INFO] c.i.m.controller.ProductController - API Fetch All Products
+2026-05-11 15:35:41 [INFO] c.i.m.service.ProductService - Fetching all products
+2026-05-11 15:35:41 [INFO] c.i.management.service.MasterService - Fetching suppliers
+2026-05-11 15:35:42 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:35:42 [INFO] c.i.management.service.MasterService - Total suppliers fetched : 0
+2026-05-11 15:35:43 [INFO] c.i.m.service.ProcurementService - Total procurement records : 0
+2026-05-11 15:35:43 [INFO] c.i.m.service.ProductService - Total products fetched : 0
+2026-05-11 15:35:44 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:35:44 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:35:44 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:35:45 [INFO] c.i.m.controller.ProductController - API Product Stats
+2026-05-11 15:35:45 [INFO] c.i.m.service.ProductService - Generating product statistics
+2026-05-11 15:35:45 [INFO] c.i.m.controller.ProductController - API Fetch All Products
+2026-05-11 15:35:45 [INFO] c.i.m.service.ProductService - Fetching all products
+2026-05-11 15:35:45 [INFO] c.i.management.service.MasterService - Fetching active categories
+2026-05-11 15:35:47 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:35:47 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:35:47 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:35:47 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:35:47 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:35:47 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:35:47 [INFO] c.i.m.service.ProductService - Stats generated successfully
+2026-05-11 15:35:47 [INFO] c.i.m.service.ProductService - Total products fetched : 0
+2026-05-11 15:35:47 [INFO] c.i.management.service.MasterService - Total active categories fetched : 0
+2026-05-11 15:35:48 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:35:49 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:35:49 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:35:49 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:35:52 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:35:52 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:35:52 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:35:52 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:35:52 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:35:52 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:35:54 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:35:55 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:35:55 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:35:55 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:35:58 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:35:58 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:35:58 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:35:58 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:35:58 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:35:58 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:36:00 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:36:01 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:36:01 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:36:01 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:36:04 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:36:04 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:36:04 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:36:04 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:36:04 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:36:04 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:36:05 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:36:07 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:36:07 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:36:07 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:36:10 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:36:10 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:36:10 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:36:10 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:36:10 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:36:10 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:36:11 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:36:13 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:36:13 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:36:13 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:36:15 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:36:15 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:36:15 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:36:15 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:36:15 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:36:15 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:36:17 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:36:18 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:36:18 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:36:18 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:36:21 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:36:21 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:36:21 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:36:21 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:36:21 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:36:21 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:36:23 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:36:24 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:36:24 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:36:24 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:36:28 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:36:28 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:36:28 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:36:28 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:36:28 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:36:28 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:36:29 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:36:31 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:36:31 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:36:31 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:36:33 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:36:33 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:36:33 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:36:33 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:36:33 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:36:33 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:36:35 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:36:36 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:36:36 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:36:36 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:36:39 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:36:39 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:36:39 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:36:39 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:36:39 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:36:39 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:36:41 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:36:42 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:36:42 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:36:42 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:36:45 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:36:45 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:36:45 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:36:45 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:36:45 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:36:45 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:36:47 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:36:48 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:36:49 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:36:49 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:36:49 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:36:51 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:36:51 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:36:51 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:36:51 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:36:51 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:36:51 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:36:52 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:36:52 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:36:52 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:36:52 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:36:52 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:36:52 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:36:52 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:36:53 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:36:54 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:36:54 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:36:55 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:36:55 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:36:55 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:36:58 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:36:58 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:36:58 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:36:58 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:36:58 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:36:58 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:36:59 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:37:00 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:37:00 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:37:00 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:37:03 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:37:03 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:37:03 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:37:03 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:37:03 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:37:03 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:37:05 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:37:06 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:37:06 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:37:06 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:37:09 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:37:09 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:37:09 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:37:09 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:37:09 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:37:09 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:37:11 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:37:12 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:37:12 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:37:12 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:37:15 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:37:15 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:37:15 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:37:15 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:37:15 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:37:15 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:37:16 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:37:17 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:37:17 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:37:17 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:37:20 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:37:20 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:37:20 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:37:20 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:37:20 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:37:20 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:37:22 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:37:23 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:37:23 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:37:23 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:37:26 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:37:26 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:37:26 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:37:26 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:37:26 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:37:26 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:37:28 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:37:29 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:37:29 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:37:29 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:37:32 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:37:32 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:37:32 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:37:32 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:37:32 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:37:32 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:37:34 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:37:35 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:37:35 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:37:35 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:37:38 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:37:38 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:37:38 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:37:38 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:37:38 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:37:38 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:37:39 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:37:40 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:37:40 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:37:40 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:37:43 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:37:43 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:37:43 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:37:43 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:37:43 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:37:43 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:37:44 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:37:46 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:37:46 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:37:46 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:37:49 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:37:49 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:37:49 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:37:49 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:37:49 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:37:49 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:37:51 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:37:52 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:37:52 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:37:52 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:37:55 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:37:55 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:37:55 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:37:55 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:37:55 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:37:55 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:37:56 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:37:58 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:37:58 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:37:58 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:38:01 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:38:01 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:38:01 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:38:01 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:38:01 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:38:01 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:38:02 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:38:04 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:38:04 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:38:04 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:38:06 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:38:06 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:38:06 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:38:06 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:38:06 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:38:06 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:38:08 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:38:09 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:38:09 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:38:09 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:38:12 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:38:12 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:38:12 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:38:12 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:38:12 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:38:12 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:38:14 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:38:15 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:38:15 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:38:15 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:38:18 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:38:18 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:38:18 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:38:18 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:38:18 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:38:18 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:38:20 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:38:21 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:38:21 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:38:21 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:38:24 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:38:24 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:38:24 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:38:24 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:38:24 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:38:24 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:38:26 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:38:27 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:38:27 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:38:27 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:38:30 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:38:30 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:38:30 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:38:30 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:38:30 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:38:30 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:38:31 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:38:33 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:38:33 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:38:33 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:38:33 [INFO] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-05-11 15:38:33 [INFO] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-11 15:38:35 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:38:35 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:38:35 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:38:35 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:38:35 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:38:35 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:38:37 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:38:38 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:38:38 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:38:38 [INFO] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-11 15:38:38 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-11 15:38:38 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-11 15:38:38 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-11 15:38:38 [INFO] c.i.management.ManagementApplication - Starting ManagementApplication using Java 17.0.12 with PID 7996 (D:\INV\INV-BACKEND\management\target\classes started by WELCOME in D:\INV\INV-BACKEND\management)
+2026-05-11 15:38:38 [DEBUG] c.i.management.ManagementApplication - Running with Spring Boot v4.0.5, Spring v7.0.6
+2026-05-11 15:38:38 [INFO] c.i.management.ManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-11 15:38:39 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-11 15:38:39 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 98 ms. Found 9 JPA repository interfaces.
+2026-05-11 15:38:40 [INFO] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-11 15:38:40 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-11 15:38:40 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-11 15:38:40 [INFO] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1283 ms
+2026-05-11 15:38:40 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-11 15:38:40 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-11 15:38:40 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-05-11 15:38:42 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13474a9d
+2026-05-11 15:38:42 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-05-11 15:38:43 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://viaduct.proxy.rlwy.net:31858/railway]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: railway/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-11 15:38:43 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-11 15:38:44 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-11 15:38:45 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-11 15:38:45 [INFO] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-11 15:38:45 [INFO] c.i.management.ManagementApplication - Started ManagementApplication in 6.374 seconds (process running for 2123.038)
+2026-05-11 15:38:45 [INFO] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-05-11 15:38:46 [INFO] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (1 addition, 0 deletions, 1 modification)
+2026-05-11 15:38:46 [INFO] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-11 15:38:46 [INFO] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-11 15:38:46 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-11 15:38:46 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-05-11 15:38:48 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-05-11 15:38:48 [INFO] c.i.management.ManagementApplication - Starting ManagementApplication using Java 17.0.12 with PID 7996 (D:\INV\INV-BACKEND\management\target\classes started by WELCOME in D:\INV\INV-BACKEND\management)
+2026-05-11 15:38:48 [DEBUG] c.i.management.ManagementApplication - Running with Spring Boot v4.0.5, Spring v7.0.6
+2026-05-11 15:38:48 [INFO] c.i.management.ManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-11 15:38:49 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-11 15:38:49 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 102 ms. Found 9 JPA repository interfaces.
+2026-05-11 15:38:49 [INFO] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-11 15:38:49 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-11 15:38:49 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-11 15:38:49 [INFO] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 926 ms
+2026-05-11 15:38:49 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-11 15:38:49 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-11 15:38:49 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2026-05-11 15:38:52 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@40dcae20
+2026-05-11 15:38:52 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2026-05-11 15:38:52 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://viaduct.proxy.rlwy.net:31858/railway]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: railway/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-11 15:38:52 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-11 15:38:54 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-11 15:38:55 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-11 15:38:55 [INFO] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-11 15:38:55 [INFO] c.i.management.ManagementApplication - Started ManagementApplication in 6.598 seconds (process running for 2133.035)
+2026-05-11 15:38:55 [INFO] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-05-11 15:39:02 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-11 15:39:02 [INFO] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-11 15:39:02 [INFO] o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-05-11 15:39:02 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:39:05 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:39:05 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:39:05 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:39:05 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:39:05 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:39:05 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:39:06 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:39:08 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:39:08 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:39:08 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:39:10 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:39:10 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:39:10 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:39:10 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:39:10 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:39:10 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:39:11 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:39:12 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:39:13 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:39:13 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:39:14 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:39:14 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:39:14 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:39:14 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:39:14 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:39:14 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:39:15 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:39:17 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:39:17 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:39:17 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:39:19 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:39:19 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:39:19 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:39:19 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:39:19 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:39:19 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:39:21 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:39:22 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:39:22 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:39:22 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:39:25 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:39:25 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:39:25 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:39:25 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:39:25 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:39:25 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:39:27 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:39:28 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:39:28 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:39:28 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:39:31 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:39:31 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:39:31 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:39:31 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:39:31 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:39:31 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:39:32 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:39:33 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:39:33 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:39:33 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:39:36 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:39:36 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:39:36 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:39:36 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:39:36 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:39:36 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:39:37 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:39:39 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:39:39 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:39:39 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:39:41 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:39:41 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:39:41 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:39:41 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:39:41 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:39:41 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:39:43 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:39:44 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:39:44 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:39:44 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:39:47 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:39:47 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:39:47 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:39:47 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:39:47 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:39:47 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:39:48 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:39:50 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:39:50 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:39:50 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:39:53 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:39:53 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:39:53 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:39:53 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:39:53 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:39:53 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:39:54 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:39:55 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:39:55 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:39:55 [INFO] c.i.management.service.ReportService - Dashboard analytics loading started
+2026-05-11 15:39:58 [INFO] c.i.management.service.ReportService - Fetched products : 0
+2026-05-11 15:39:58 [INFO] c.i.management.service.ReportService - Fetched sale items : 0
+2026-05-11 15:39:58 [INFO] c.i.management.service.ReportService - Calculated total revenue : 0.0
+2026-05-11 15:39:58 [INFO] c.i.management.service.ReportService - Calculated inventory value : 0.0
+2026-05-11 15:39:58 [INFO] c.i.management.service.ReportService - Top selling products calculated
+2026-05-11 15:39:58 [INFO] c.i.management.service.ReportService - Category analytics prepared
+2026-05-11 15:40:00 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
+2026-05-11 15:40:01 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
+2026-05-11 15:40:01 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
