@@ -2837,3 +2837,9 @@ com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after
 2026-05-11 15:40:00 [INFO] c.i.management.service.ReportService - Sales report generated | Transactions : 0
 2026-05-11 15:40:01 [INFO] c.i.management.service.ReportService - Purchase report generated | Records : 0
 2026-05-11 15:40:01 [INFO] c.i.management.service.ReportService - Dashboard analytics loaded successfully
+2026-05-11 15:45:05 [INFO] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2026-05-11 15:45:05 [INFO] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-11 15:45:05 [INFO] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-11 15:45:05 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-11 15:45:05 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2026-05-11 15:45:05 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.

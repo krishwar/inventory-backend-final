@@ -11,12 +11,11 @@ public class CorsConfig {
     @Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
-
             @Override
             public void addCorsMappings(CorsRegistry registry) {
 
                 registry.addMapping("/**")
-                        .allowedOrigins("*")
+                        .allowedOrigins("https://genuine-manatee-abd614.netlify.app")
                         .allowedMethods("*")
                         .allowedHeaders("*");
             }
